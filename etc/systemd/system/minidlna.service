@@ -1,0 +1,12 @@
+[Service]
+ExecStart=/usr/bin/minidlnad  -R -f /etc/minidlna/minidlna.conf -P /var/run/minidlna.pid
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=minidlnad
+User=pi
+Group=pi
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
