@@ -8,7 +8,7 @@ eval "mkdir -p /usr/local/var/run/minidlna"
 eval "chown -R pi:pi /usr/local/var"
 
 echo "setting up services"
-eval "systemctl endable minidlna.service"
+eval "systemctl enable minidlna.service"
 eval "systemctl start minidlna.service"
 
 echo "MiniDLNA done"
