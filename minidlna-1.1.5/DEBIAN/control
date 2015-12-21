@@ -1,0 +1,7 @@
+Package: minidlna
+Architecture: all
+Maintainer: Kevin 
+Depends: debconf (>= 0.5.00)
+Priority: optional
+Version: 1.1.5
+Description: A simple DLNA server
